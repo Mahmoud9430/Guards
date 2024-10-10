@@ -1,0 +1,509 @@
+/* start rules */
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  scroll-behavior: smooth;
+
+  
+}
+
+:root {
+  --padding-top: 100px;
+  --padding-bottom: 100px;
+  --main-color: #f1db25;
+  --main-specing: 3px;
+}
+/* end rules */
+
+
+/* start landing-page */
+.landing-page {
+  height: 100vh;
+  background-image: url("../images/hero-bg.jpg");
+  background-size: cover;
+  position: relative;
+}
+.landing-page .over-lay {
+  position: absolute;
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  opacity: 0.5;
+}
+/* start navbar */
+
+.navbar {
+  padding: 20px;
+}
+.navbar .navbar-brand {
+  color: white;
+  text-transform: capitalize;
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: var(--main-specing);
+}
+
+.navbar .navbar-brand::first-letter {
+  color: var(--main-color);
+}
+.navbar .nav-link.active {
+  background: #1c1c1c;
+  border-radius: 20px;
+  color: white;
+}
+.navbar .nav-link {
+  text-transform: capitalize;
+  color: white;
+  margin-left: 10px;
+  font-size: 18px;
+  transition: 0.3s;
+  padding: 15px;
+}
+
+.navbar .nav-link:hover {
+  border-radius: 50%;
+  background-color: #1c1c1c;
+}
+
+/* end navbar */
+
+.landing-page .landing-text {
+  position: absolute;
+  top: 40%;
+  left: 20%;
+
+}
+
+.landing-page .landing-text h1 {
+  text-transform: uppercase;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: var(--main-specing);
+}
+@media (max-width: 767.98px) {
+  .landing-page .landing-text h1 {
+    font-size: 18px;
+    margin: 0;
+    line-height: 5px;
+  }
+}
+
+.landing-page .landing-text span {
+  color: var(--main-color);
+  display: block;
+  line-height: 60px;
+}
+
+.landing-page .landing-text p {
+  color: white;
+  width: 75%;
+  line-height: 1.8;
+}
+@media (min-width: 346px) {
+  .landing-page .landing-text p {
+    font-size: 15px;
+  }
+}
+
+.landing-page .landing-text .btn-box button {
+  padding: 10px 35px;
+  border-radius: 5px;
+  border: none;
+  margin: 20px 0;
+  text-transform: capitalize;
+  margin-right: 10px;
+  font-weight: bold;
+}
+@media (max-width: 767.98px) {
+  .landing-page .landing-text .btn-box button {
+    padding: 5px 10px;
+  }
+}
+
+.landing-page .landing-text .btn-box button:last-child {
+  background-color: var(--main-color);
+  color: white;
+}
+
+.landing-page .landing-text .btn-box button:hover {
+  background: none;
+  border: 1px solid white;
+  color: white;
+}
+
+
+.box-loading {
+  
+}
+
+
+/* end landing-page */
+
+/* start about */
+
+.about {
+  padding-top: var(--padding-top);
+  padding-bottom: var(--padding-bottom);
+}
+
+.about .img-about img {
+  width: 100%;
+}
+
+.about .about-text {
+  margin-left: -100px;
+  margin-top: 50px;
+  background-color: white;
+  padding: 50px;
+}
+@media (max-width: 1199.98px) {
+  .about .about-text {
+    margin-left: 10px;
+    margin-top: 0;
+    padding: 10px;
+  }
+}
+.about .about-text h3 {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 30px;
+  letter-spacing: var(--main-specing);
+  margin: 10px 0;
+}
+.about .about-text p {
+  margin: 20px 0;
+}
+.about .about-text button {
+  text-transform: capitalize;
+  text-decoration: none;
+  border: 2px solid white;
+  background-color: var(--main-color);
+  color: white;
+  padding: 10px 35px;
+  border-radius: 5px;
+}
+
+/* end about */
+
+/* start services */
+.services {
+  padding-top: var(--padding-top);
+  padding-bottom: var(--padding-bottom);
+  text-align: center;
+  background-color: #1c1c1c;
+}
+.services h2 {
+  text-transform: uppercase;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 3px;
+  margin: 40px;
+}
+.services .services-box {
+  background-color: #ffffff;
+  margin-top: 30px;
+}
+.services .services-box img {
+  width: 20%;
+  margin: 25px 0;
+}
+.services .services-box h4 {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 10px;
+}
+.services .services-box p {
+  margin: 10px 20px;
+}
+
+.services .services-box button {
+  background-color: var(--main-color);
+  padding: 10px 35px;
+  border: none;
+  color: white;
+  text-transform: capitalize;
+  margin: 20px 0 30px;
+}
+
+/* end services */
+
+/* stat clients */
+.clients {
+  padding-top: var(--padding-top);
+  padding-bottom: var(--padding-bottom);
+  text-align: center;
+}
+.clients .client-box {
+  position: relative;
+}
+
+.clients h2 {
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: var(--main-specing);
+}
+.clients img {
+  width: 15%;
+  border-radius: 25px;
+  margin: 40px 0 20px;
+}
+@media (max-width: 991.98px) {
+  .clients img {
+    width: 30%;
+  }
+}
+
+.clients h5 {
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.clients p {
+  margin-top: 10px;
+}
+
+@media (max-width: 991.98px) {
+  .clients p {
+    font-size: 15px;
+  }
+}
+
+.clients .client-box button {
+  position: absolute;
+  top: 50%;
+  background-color: white;
+  border: none;
+  transform: translateY(-50%);
+  font-size: 20px;
+  background-color: #1c1c1c;
+  color: white;
+  border-radius: 50%;
+  width: 30px;
+}
+.clients .client-box .left {
+  left: 25px;
+}
+.clients .client-box .right {
+  right: 25px;
+}
+
+@media (max-width: 991.98px) {
+  .clients .client-box .left {
+    left: 2px;
+  }
+  .clients .client-box .right {
+    right: 2px;
+  }
+}
+/* end clients */
+
+/* start content */
+.contact {
+  background-image: url("../images/contact-bg.jpg");
+  background-size: cover;
+  text-align: center;
+  padding-top: var(--padding-top);
+  padding-bottom: var(--padding-bottom);
+  position: relative;
+}
+.contact .over-lay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  opacity: 0.5;
+}
+.contact h2 {
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: var(--main-specing);
+  text-align: center;
+  margin: 40px 0;
+  z-index: 1;
+  color: white;
+  position: relative;
+}
+
+.contact form input {
+  position: relative;
+  z-index: 1;
+  display: block;
+  margin: auto auto;
+  width: 50%;
+  margin-top: 30px;
+  height: 50px;
+  background-color: none;
+  border: none;
+  color: black;
+  padding-left: 20px;
+}
+
+@media (max-width: 991.98px) {
+  .contact form input {
+    height: 30px;
+  }
+}
+.contact form input::placeholder {
+  text-transform: capitalize;
+
+  color: black;
+}
+
+.contact form textarea {
+  position: relative;
+  z-index: 1;
+  width: 50%;
+  margin-top: 30px;
+  height: 100px;
+  color: black;
+}
+@media (max-width: 991.98px) {
+  .contact form textarea {
+    height: 70%;
+  }
+}
+.contact form textarea::placeholder {
+  color: black;
+  padding-left: 20px;
+  text-transform: capitalize;
+}
+
+.contact button {
+  background-color: var(--main-color);
+  padding: 10px 60px;
+  border: none;
+  color: white;
+  text-transform: capitalize;
+  margin: 20px 0 30px;
+  position: relative;
+  z-index: 1;
+  border-radius: 5px;
+}
+
+/* end content */
+
+/* start Guards */
+.Guards {
+  padding-top: var(--padding-top);
+  padding-bottom: 20px;
+}
+.Guards h2 {
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: var(--main-specing);
+  text-align: center;
+}
+.Guards .Guard-content {
+  position: relative;
+}
+.Guards .Guard-content .Guard-text {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  width: 100%;
+  text-align: center;
+  background: #1c1c1cb0;
+  padding: 20px 0;
+}
+
+.Guards p {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.Guards .Guard-content img {
+  width: 100%;
+  margin-top: 40px;
+}
+.Guards .Guard-content .Guard-text h5 {
+  text-transform: capitalize;
+  font-size: 25px;
+  font-weight: bold;
+}
+.Guards .Guard-content .Guard-text p {
+  text-transform: capitalize;
+  font-size: 18px;
+}
+
+.Guards .Guard-btn {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+  text-decoration: none;
+}
+.Guards .Guard-btn a {
+  border: 2px solid white;
+  background-color: var(--main-color);
+  text-decoration: none;
+  color: white;
+  padding: 10px 40px;
+  text-transform: capitalize;
+  font-size: 20px;
+  letter-spacing: var(--main-specing);
+}
+
+/* end Guards*/
+
+/* start footer */
+.footer {
+  background-color: #101010;
+  color: white;
+  padding-top: var(--padding-top);
+  padding-bottom: 20px;
+}
+.footer .foot-box {
+  margin-bottom: 50px;
+}
+.footer .foot-box h5 {
+  font-size: 1.25rem;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+  font-size: 25px;
+}
+.footer .foot-box h5::first-letter {
+  color: var(--main-color);
+  font-weight: bold;
+}
+
+.footer .foot-box input {
+  padding: 5px 20px;
+}
+.footer .foot-box input::placeholder {
+  text-transform: capitalize;
+}
+
+.footer .foot-box button {
+  padding: 8px 35px;
+  margin: 20px 0 10px;
+  border: none;
+  background-color: var(--main-color);
+  color: white;
+  text-transform: uppercase;
+  border-radius: 25px;
+}
+.footer .foot-box ul {
+  list-style: none;
+  margin: 10px 0;
+  padding-left: 0;
+}
+
+.footer .foot-box ul li {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 25px;
+  color: var(--main-color);
+}
+footer {
+  padding-top: 50px;
+  margin: 0;
+  text-align: center;
+}
+footer {
+  text-transform: capitalize;
+}
+/* end footer */
